@@ -52,6 +52,8 @@
 
 .right {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* header */
@@ -63,7 +65,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background: gray;
+  /* background: gray; */
 }
 
 .nav-links {
@@ -75,11 +77,107 @@ header {
   color: white;
 }
 
-.nav-link-active {
+.nav-link_active {
   color: #efc862;
   text-decoration: underline;
 }
 
 .search-icon {
   margin-left: 80px;
+}
+
+/* main */
+
+main {
+  /* background-color: gray; */
+  margin-left: 79px;
+  margin-right: 120px;
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-left {
+  width: 320px;
+}
+
+.main-right {
+  width: 400px;
+}
+
+.about-index-text {
+  font-size: 28px;
+  line-height: 40px;
+  /* identical to box height, or 143% */
+
+  letter-spacing: 0.1em;
+
+  color: #ffffff;
+}
+
+.about-index-divider {
+  width: 100%;
+  display: flex;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.about-index-divider_yellow {
+  width: 100%;
+  border-bottom: 1px solid #efc862;
+}
+
+.about-index-divider_white {
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+
+.about-option {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.about-option-text {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height, or 138% */
+
+  color: #646464;
+}
+.about-option-text_active {
+  font-size: 21px;
+  line-height: 30px;
+  /* identical to box height, or 143% */
+
+  color: #ffffff;
+}
+
+.about-title {
+  font-family: "Tuffy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 72px;
+  /* or 100% */
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  margin-bottom: 24px;
+}
+
+.about-description {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  /* or 143% */
+
+  letter-spacing: 0.1em;
+
+  color: #ffffff;
 }
