@@ -35,6 +35,7 @@
   text-transform: uppercase;
 
   color: #ffffff;
+  cursor: pointer;
 }
 
 .social-icons {
@@ -43,6 +44,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 
 .social-icon {
@@ -80,6 +82,11 @@ header {
   color: white;
 }
 
+.nav-link:hover {
+  color: #efc862;
+  text-decoration: underline;
+}
+
 .nav-link_active {
   color: #efc862;
   text-decoration: underline;
@@ -87,6 +94,7 @@ header {
 
 .search-icon {
   margin-left: 80px;
+  cursor: pointer;
 }
 
 /* main */
@@ -139,22 +147,27 @@ main {
   display: flex;
   flex-direction: column;
   row-gap: 8px;
+  cursor: pointer;
 }
 
 .about-option-text {
-  font-weight: 500;
   font-size: 13px;
   line-height: 18px;
   /* identical to box height, or 138% */
 
   color: #646464;
+  /* color: red; */
+
+  transition: all 0.2s ease-in-out;
 }
+
 .about-option-text_active {
   font-size: 21px;
   line-height: 30px;
   /* identical to box height, or 143% */
 
   color: #ffffff;
+  transition: all 0.2s ease-in-out;
 }
 
 .about-title {
